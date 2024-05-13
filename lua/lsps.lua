@@ -1,9 +1,21 @@
 local lspconfig = require('lspconfig')
 
-lspconfig.intelephense.setup{}
-lspconfig.tsserver.setup{}
-lspconfig.rust_analyzer.setup{}
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
+lspconfig.intelephense.setup{
+	capabilities = capabilities,
+}
+
+lspconfig.tsserver.setup{
+	capabilities = capabilities,
+}
+
+lspconfig.rust_analyzer.setup{
+	capabilities = capabilities,
+}
+
 lspconfig.lua_ls.setup{
+	capabilities = capabilities,
 	settings = {
 		Lua = {
 			diagnostics = {
@@ -12,3 +24,4 @@ lspconfig.lua_ls.setup{
 		}
 	},
 }
+

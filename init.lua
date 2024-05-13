@@ -31,16 +31,6 @@ bufferline.setup{
 
 require("nvim-tree").setup()
 
--- setup coq
-vim.g.coq_settings = {
-	auto_start = 'shut-up',
-	keymap = {
-		jump_to_mark = "<C-n>",
-		bigger_preview = "<C-f>",
-	},
-}
-vim.cmd("COQnow -s")
-
 require("Comment").setup{
 	padding = true,
 	sticky = true,
@@ -54,6 +44,7 @@ require("Comment").setup{
 require("opts")
 require("mappings")
 require("lsps")
+require("completions")
 
 vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])

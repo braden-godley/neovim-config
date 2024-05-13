@@ -26,16 +26,6 @@ return {
 	{
 		"github/copilot.vim",
 	},
-	-- auto completions
-	{
-		"ms-jpq/coq_nvim",
-		branch = "coq",
-	},
-	-- snippets
-	{
-		"ms-jpq/coq.artifacts",
-		branch = "artifacts",
-	},
 	-- theme
 	{
 		"ellisonleao/gruvbox.nvim", priority = 1000 , config = true
@@ -44,5 +34,13 @@ return {
 	{
 		"numToStr/Comment.nvim",
 		lazy = false,
+	},
+	-- completions
+	{
+		"hrsh7th/nvim-cmp",
+	},
+	-- completions from lsp?
+	{
+		"hrsh7th/cmp-nvim-lsp",
 	},
 }
