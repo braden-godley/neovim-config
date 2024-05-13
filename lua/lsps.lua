@@ -25,3 +25,18 @@ lspconfig.lua_ls.setup{
 	},
 }
 
+local configs = require "lspconfig.configs"
+configs.blade = {
+	default_config = {
+		cmd = { "laravel-dev-generators", "lsp" },
+		filetypes = { "blade" },
+		root_dir = function(fname)
+			return lspconfig.util.find_git_ancestor(fname)
+		end,
+		settings = {},
+	}
+}
+
+lspconfig.blade.setup{
+	capabilities = capabilities,
+}
