@@ -63,4 +63,8 @@ return {
 	{
 		"rafamadriz/friendly-snippets",
 	},
+	-- close buffers
+	{
+		"moll/vim-bbye",
+	},
 }

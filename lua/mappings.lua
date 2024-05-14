@@ -9,8 +9,12 @@ vim.keymap.set('n', '<leader>fb', telescope.buffers, {})
 vim.keymap.set('n', '<leader>fh', telescope.help_tags, {})
 
 -- bufferline
+local bufferline = require('bufferline')
 vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>', { silent = true })
 vim.keymap.set('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { silent = true })
+
+-- vim bbye
+vim.keymap.set('n', '<leader>c', ':Bdelete<CR>', { silent = true })
 
 -- nvim tree
 vim.keymap.set('n', '<leader>e', ":NvimTreeOpen<CR>", { silent = true })
@@ -20,9 +24,6 @@ vim.keymap.set('n', '<C-h>', ":wincmd h<CR>", { silent = true })
 vim.keymap.set('n', '<C-j>', ":wincmd j<CR>", { silent = true })
 vim.keymap.set('n', '<C-k>', ":wincmd k<CR>", { silent = true })
 vim.keymap.set('n', '<C-l>', ":wincmd l<CR>", { silent = true })
-
--- close buffer
-vim.keymap.set('n', '<leader>c', ":bd<CR>", { silent = true })
 
 -- lsp stuff
 vim.keymap.set('n', 'gd', ':lua vim.lsp.buf.definition()<CR>', { silent = true })
