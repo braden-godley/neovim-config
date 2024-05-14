@@ -27,8 +27,11 @@ return {
 		"github/copilot.vim",
 	},
 	-- theme
+	-- {
+	-- 	"ellisonleao/gruvbox.nvim", priority = 1000 , config = true
+	-- },
 	{
-		"ellisonleao/gruvbox.nvim", priority = 1000 , config = true
+		"rose-pine/neovim",
 	},
 	-- comment
 	{

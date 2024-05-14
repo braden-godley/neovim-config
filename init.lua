@@ -57,5 +57,11 @@ require("lsps")
 require("completions")
 
 vim.o.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
+
+require("rose-pine").setup{
+	variant = "moon",
+	dark_variant = "moon",
+	disable_background = true,
+}
+vim.cmd([[colorscheme rose-pine]])
 
