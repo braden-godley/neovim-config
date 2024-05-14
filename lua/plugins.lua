@@ -67,4 +67,9 @@ return {
 	{
 		"moll/vim-bbye",
 	},
+	-- obsidian.nvim
+	{
+		"epwalsh/obsidian.nvim",
+		version = "*", -- use the latest version
+	},
 }

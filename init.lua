@@ -40,6 +40,16 @@ require("Comment").setup{
 	},
 }
 
+-- setup obsidian.nvim
+require("obsidian").setup{
+	workspaces = {
+		{
+			name = "obsidian",
+			path = "~/Documents/Obsidian Vault",
+		},
+	},
+}
+
 -- setup mappings and lsps
 require("opts")
 require("mappings")
