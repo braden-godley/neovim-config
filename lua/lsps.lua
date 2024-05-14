@@ -2,6 +2,9 @@ local lspconfig = require('lspconfig')
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+-- More LSP configurations can be found here:
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+
 lspconfig.intelephense.setup{
 	capabilities = capabilities,
 }
@@ -23,6 +26,10 @@ lspconfig.lua_ls.setup{
 			}
 		}
 	},
+}
+
+lspconfig.marksman.setup{
+	capabilities = capabilities,
 }
 
 local configs = require "lspconfig.configs"
