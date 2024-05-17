@@ -26,11 +26,15 @@ vim.keymap.set('n', '<C-k>', ":wincmd k<CR>", { silent = true })
 vim.keymap.set('n', '<C-l>', ":wincmd l<CR>", { silent = true })
 
 -- lsp stuff
-vim.keymap.set('n', 'gd', ':lua vim.lsp.buf.definition()<CR>', { silent = true })
 vim.keymap.set('n', '<S-k>', ':lua vim.lsp.buf.hover()<CR>', { silent = true })
+vim.keymap.set('n', 'gd', ':lua vim.lsp.buf.definition()<CR>', { silent = true })
 vim.keymap.set('n', 'gD', ':lua vim.lsp.buf.declaration()<CR>', { silent = true })
 vim.keymap.set('n', 'gi', ':lua vim.lsp.buf.implementation()<CR>', { silent = true })
 vim.keymap.set('n', 'gr', ':lua vim.lsp.buf.references()<CR>', { silent = true })
+vim.keymap.set('n', 'gs', ':lua vim.lsp.buf.signature_help()<CR>', { silent = true })
+vim.keymap.set('n', 'gt', ':lua vim.lsp.buf.type_definition()<CR>', { silent = true })
+vim.keymap.set('n', 'fr', ':lua vim.lsp.buf.rename()<CR>', { silent = true })
+vim.keymap.set('n', 'ga', ':lua vim.lsp.buf.code_action()<CR>', { silent = true })
 
 -- copilot
 vim.keymap.set('i', '<C-f>', 'copilot#Accept("\\<CR>")', {
