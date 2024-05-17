@@ -75,4 +75,8 @@ return {
 		"epwalsh/obsidian.nvim",
 		version = "*", -- use the latest version
 	},
+    -- formatting with conform
+    {
+        "stevearc/conform.nvim",
+    },
 }

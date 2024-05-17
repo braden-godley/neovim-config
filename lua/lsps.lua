@@ -8,7 +8,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 lspconfig.intelephense.setup{
 	capabilities = capabilities,
     init_options = {
-        licenceKey = "$HOME/.config/intelephense/licence.txt"
+        licenceKey = "~/.config/intelephense/licence.txt"
     },
 }
 

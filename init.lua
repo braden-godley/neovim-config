@@ -50,6 +50,11 @@ require("obsidian").setup{
 	},
 }
 
+require("conform").setup{
+    formatters_by_ft = {
+        php = { "intelephense" },
+    },
+}
 -- setup mappings and lsps
 require("opts")
 require("mappings")
