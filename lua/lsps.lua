@@ -47,3 +47,6 @@ configs.blade = {
 lspconfig.blade.setup{
 	capabilities = capabilities,
 }
+
+lspconfig.twiggy_language_server.setup{}
+
