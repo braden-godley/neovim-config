@@ -33,9 +33,9 @@ vim.keymap.set('n', 'gr', ':lua vim.lsp.buf.references()<CR>', { silent = true }
 vim.keymap.set('n', 'gs', ':lua vim.lsp.buf.signature_help()<CR>', { silent = true })
 vim.keymap.set('n', 'gt', ':lua vim.lsp.buf.type_definition()<CR>', { silent = true })
 vim.keymap.set('n', 'ga', ':lua vim.lsp.buf.code_action()<CR>', { silent = true })
+vim.keymap.set('n', 'gR', ':lua vim.lsp.buf.rename()<CR>', { silent = true })
 
 vim.keymap.set('n', '<leader>fm', ':lua require("conform").format()<CR>', { silent = true })
-vim.keymap.set('n', '<leader>fr', ':lua vim.lsp.buf.rename()<CR>', { silent = true })
 
 -- copilot
 vim.keymap.set('i', '<C-f>', 'copilot#Accept("\\<CR>")', {
