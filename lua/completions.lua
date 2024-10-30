@@ -8,7 +8,7 @@ cmp.setup({
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-o>"] = cmp.mapping.complete(),
 		["<C-e>"] = cmp.mapping.abort(),
-		["<C-y>"] = cmp.mapping.confirm({ select = true }),
+		["<C-c>"] = cmp.mapping.confirm({ select = true }),
 	}),
 	sources = cmp.config.sources(
 		{

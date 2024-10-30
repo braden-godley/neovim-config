@@ -9,7 +9,7 @@ lspconfig.intelephense.setup{
 	capabilities = capabilities,
 }
 
-lspconfig.tsserver.setup{
+lspconfig.ts_ls.setup{
 	capabilities = capabilities,
 }
 
@@ -32,21 +32,21 @@ lspconfig.marksman.setup{
 	capabilities = capabilities,
 }
 
-local configs = require "lspconfig.configs"
-configs.blade = {
-	default_config = {
-		cmd = { "laravel-dev-generators", "lsp" },
-		filetypes = { "blade" },
-		root_dir = function(fname)
-			return lspconfig.util.find_git_ancestor(fname)
-		end,
-		settings = {},
-	}
-}
+-- local configs = require "lspconfig.configs"
+-- configs.blade = {
+-- 	default_config = {
+-- 		cmd = { "laravel-dev-generators", "lsp" },
+-- 		filetypes = { "blade" },
+-- 		root_dir = function(fname)
+-- 			return lspconfig.util.find_git_ancestor(fname)
+-- 		end,
+-- 		settings = {},
+-- 	}
+-- }
+--
+-- lspconfig.blade.setup{
+-- 	capabilities = capabilities,
+-- }
 
-lspconfig.blade.setup{
-	capabilities = capabilities,
-}
-
-lspconfig.twiggy_language_server.setup{}
+-- lspconfig.twiggy_language_server.setup{}
 

@@ -1,82 +1,42 @@
 return {
 	-- find files
-	{
-		"nvim-telescope/telescope.nvim",
-		dependencies = { "nvim-lua/plenary.nvim" }
-	},
+	{ "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 	-- tabs and buffers
-	{
-		"akinsho/bufferline.nvim",
-		lazy = false,
-		dependencies = { "nvim-tree/nvim-web-devicons" }
-	},
+	{ "akinsho/bufferline.nvim", lazy = false, dependencies = { "nvim-tree/nvim-web-devicons" } },
 	-- treesitter
-	{
-		"nvim-treesitter/nvim-treesitter",
-	},
+	{ "nvim-treesitter/nvim-treesitter", },
 	-- lsp
-	{
-		"neovim/nvim-lspconfig",
-	},
+	{ "neovim/nvim-lspconfig", },
 	-- project tree
-	{
-		"nvim-tree/nvim-tree.lua",
-	},
+	{ "nvim-tree/nvim-tree.lua", },
 	-- copilot completions
-	{
-		"github/copilot.vim",
-	},
+	{ "github/copilot.vim", },
 	-- theme
 	-- {
 	-- 	"ellisonleao/gruvbox.nvim", priority = 1000 , config = true
 	-- },
-	{
-		"rose-pine/neovim",
-	},
+	{ "rose-pine/neovim", },
+	-- { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000, },
 	-- comment
-	{
-		"numToStr/Comment.nvim",
-		lazy = false,
-	},
+	{ "numToStr/Comment.nvim", lazy = false, },
 	-- completions
-	{
-		"hrsh7th/nvim-cmp",
-	},
+	{ "hrsh7th/nvim-cmp", },
 	-- completions from lsp?
-	{
-		"hrsh7th/cmp-nvim-lsp",
-	},
-	{
-		"hrsh7th/cmp-buffer",
-	},
-	{
-		"hrsh7th/cmp-path",
-	},
-	{
-		"hrsh7th/cmp-cmdline",
-	},
+	{ "hrsh7th/cmp-nvim-lsp", },
+	{ "hrsh7th/cmp-buffer", },
+	{ "hrsh7th/cmp-path", },
+	{ "hrsh7th/cmp-cmdline", },
 	-- snippets engine
-	{
-		"L3MON4D3/LuaSnip",
-	},
-	{
-		"saadparwaiz1/cmp_luasnip",
-	},
+	{ "L3MON4D3/LuaSnip", },
+	{ "saadparwaiz1/cmp_luasnip", },
 	-- the snippets themselves
-	{
-		"rafamadriz/friendly-snippets",
-	},
+	{ "rafamadriz/friendly-snippets", },
 	-- close buffers
-	{
-		"moll/vim-bbye",
-	},
+	{ "moll/vim-bbye", },
 	-- obsidian.nvim
-	{
-		"epwalsh/obsidian.nvim",
-		version = "*", -- use the latest version
-	},
-    -- formatting with conform
-    {
-        "stevearc/conform.nvim",
-    },
+	{ "epwalsh/obsidian.nvim", version = "*", },
+	-- formatting with conform
+	{ "stevearc/conform.nvim", },
+	-- blanklines
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 }
