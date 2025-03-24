@@ -28,6 +28,10 @@ lspconfig.lua_ls.setup{
 	},
 }
 
+lspconfig.pylsp.setup{
+	capabilities = capabilities,
+}
+
 lspconfig.marksman.setup{
 	capabilities = capabilities,
 }

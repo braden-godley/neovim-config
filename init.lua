@@ -41,14 +41,14 @@ require("Comment").setup{
 }
 
 -- setup obsidian.nvim
-require("obsidian").setup{
-	workspaces = {
-		{
-			name = "obsidian",
-			path = "~/Documents/Obsidian Vault",
-		},
-	},
-}
+-- require("obsidian").setup{
+-- 	workspaces = {
+-- 		{
+-- 			name = "obsidian",
+-- 			path = "~/Documents/Obsidian Vault",
+-- 		},
+-- 	},
+-- }
 
 require("conform").setup{
     formatters_by_ft = {
