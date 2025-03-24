@@ -18,5 +18,8 @@ return {
         config = function()
             require("gitsigns").setup {}
         end
-    }
+    },
+    {
+        "moll/vim-bbye",
+    },
 }
