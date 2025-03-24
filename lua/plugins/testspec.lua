@@ -1,16 +1,5 @@
 return {
     {
-        "nvim-tree/nvim-tree.lua",
-        version = "*",
-        lazy = false,
-        dependencies = {
-            "nvim-tree/nvim-web-devicons",
-        },
-        config = function()
-            require("nvim-tree").setup {}
-        end,
-    },
-    {
         "romgrk/barbar.nvim",
         dependencies = {
             "lewis6991/gitsigns.nvim",
@@ -22,5 +11,12 @@ return {
         dependencies = {
             "nvim-lua/plenary.nvim"
         }
+    },
+    {
+        "lewis6991/gitsigns.nvim",
+        lazy = true,
+        config = function()
+            require("gitsigns").setup {}
+        end
     }
 }
