@@ -15,7 +15,11 @@ return {
                     "ts_ls",
                 }
             })
+
+            local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
             require("lspconfig").lua_ls.setup {
+                capabilities = capabilities,
                 settings = {
                     Lua = {
                         runtime = {
@@ -30,9 +34,15 @@ return {
                     },
                 },
             }
-            require("lspconfig").ts_ls.setup {}
-            require("lspconfig").gopls.setup {}
-            require("lspconfig").eslint.setup {}
+            require("lspconfig").ts_ls.setup {
+                capabilities = capabilities,
+            }
+            require("lspconfig").gopls.setup {
+                capabilities = capabilities,
+            }
+            require("lspconfig").eslint.setup {
+                capabilities = capabilities,
+            }
         end,
     },
     {
@@ -40,5 +50,8 @@ return {
     },
     {
         "neovim/nvim-lspconfig"
+    },
+    {
+        "L3MON4D3/LuaSnip",
     },
 }
