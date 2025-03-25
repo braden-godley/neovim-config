@@ -9,9 +9,9 @@ return {
         config = function()
             require("mason").setup()
             require("mason-lspconfig").setup({
-                ensure_installed = { 
-                    "eslint", 
-                    "lua_ls", 
+                ensure_installed = {
+                    "eslint",
+                    "lua_ls",
                     "ts_ls",
                 }
             })
@@ -45,13 +45,7 @@ return {
             }
         end,
     },
-    {
-        "williamboman/mason-lspconfig.nvim",
-    },
-    {
-        "neovim/nvim-lspconfig"
-    },
-    {
-        "L3MON4D3/LuaSnip",
-    },
+    { "williamboman/mason-lspconfig.nvim", },
+    { "neovim/nvim-lspconfig" },
+    { "L3MON4D3/LuaSnip", },
 }

@@ -9,10 +9,10 @@ return {
         config = function()
             require("nvim-treesitter.configs").setup({
                 ensure_installed = {
-                    "lua", 
-                    "javascript", 
-                    "typescript", 
-                    "python", 
+                    "lua",
+                    "javascript",
+                    "typescript",
+                    "python",
                     "rust",
                     "go",
                     "json",
@@ -34,7 +34,7 @@ return {
                             ["af"] = "@function.outer",
                             ["if"] = "@function.inner",
                             ["ac"] = "@class.outer",
-                            ["if"] = "@class.inner",
+                            ["ic"] = "@class.inner",
                         }
                     }
                 }
