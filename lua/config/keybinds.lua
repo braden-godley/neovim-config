@@ -11,6 +11,9 @@ function setupKeybinds()
     -- vim bbye
     vim.keymap.set('n', '<leader>c', ':Bdelete<CR>', { silent = true })
 
+    -- nvim tree
+    vim.keymap.set('n', '<leader>e', ":NvimTreeOpen<CR>", { silent = true })
+
     -- move between panes
     vim.keymap.set('n', '<C-h>', ":wincmd h<CR>", silent)
     vim.keymap.set('n', '<C-j>', ":wincmd j<CR>", silent)

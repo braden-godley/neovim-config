@@ -16,10 +16,17 @@ return {
         "lewis6991/gitsigns.nvim",
         lazy = true,
         config = function()
-            require("gitsigns").setup {}
+            require("gitsigns").setup()
         end
     },
     {
         "moll/vim-bbye",
+    },
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            require("lualine").setup()
+        end
     },
 }
