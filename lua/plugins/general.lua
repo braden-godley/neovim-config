@@ -20,13 +20,25 @@ return {
         end
     },
     {
-        "moll/vim-bbye",
-    },
-    {
         "nvim-lualine/lualine.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
             require("lualine").setup()
         end
     },
+    {
+        "numToStr/Comment.nvim",
+        lazy = false,
+        config = function()
+            require("Comment").setup({
+                padding = true,
+                sticky = true,
+                toggler = {
+                    line = 'gcc',
+                    block = 'gbc',
+                },
+            })
+        end
+    },
+    { "moll/vim-bbye", },
 }
