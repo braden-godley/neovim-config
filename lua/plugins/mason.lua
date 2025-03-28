@@ -43,6 +43,9 @@ return {
 			require("lspconfig").eslint.setup({
 				capabilities = capabilities,
 			})
+			require("lspconfig").rust_analyzer.setup({
+				capabilities = capabilities,
+			})
 		end,
 	},
 	{ "williamboman/mason-lspconfig.nvim" },
