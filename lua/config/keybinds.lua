@@ -7,6 +7,12 @@ local function setupKeybinds()
 	vim.keymap.set("n", "<leader>fw", telescope.live_grep, {})
 	vim.keymap.set("n", "<leader>fb", telescope.buffers, {})
 	vim.keymap.set("n", "<leader>fh", telescope.help_tags, {})
+	vim.keymap.set("n", "<leader>fs", telescope.lsp_document_symbols, {})
+	vim.keymap.set("n", "<leader>fg", telescope.git_commits, {})
+	vim.keymap.set("n", "<leader>fG", telescope.git_bcommits, {})
+	vim.keymap.set("n", "<leader>fj", telescope.jumplist, {})
+	vim.keymap.set("n", "<leader>fo", telescope.oldfiles, {})
+	vim.keymap.set("n", "<leader>fd", telescope.diagnostics, {})
 
 	-- vim bbye
 	vim.keymap.set("n", "<leader>c", ":Bdelete<CR>", { silent = true })
