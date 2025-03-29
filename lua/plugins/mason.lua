@@ -15,8 +15,16 @@ return {
 					"ts_ls",
 				},
 			})
-
-			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+		end,
+	},
+	{ "williamboman/mason-lspconfig.nvim" },
+	{
+		"neovim/nvim-lspconfig",
+		dependencies = {
+			"saghen/blink.cmp",
+		},
+		config = function()
+			local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 			require("lspconfig").lua_ls.setup({
 				capabilities = capabilities,
@@ -48,6 +56,4 @@ return {
 			})
 		end,
 	},
-	{ "williamboman/mason-lspconfig.nvim" },
-	{ "neovim/nvim-lspconfig" },
 }
