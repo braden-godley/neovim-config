@@ -1,23 +1,30 @@
 return {
 	{
-		"williamboman/mason.nvim",
+		"mason-org/mason.nvim",
 		dependencies = {
-			"williamboman/mason-lspconfig.nvim",
 			"neovim/nvim-lspconfig",
 		},
 		lazy = false,
 		config = function()
 			require("mason").setup()
+		end,
+	},
+	{
+		"mason-org/mason-lspconfig.nvim",
+		dependencies = {
+			"mason-org/mason.nvim",
+		},
+		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"eslint",
 					"lua_ls",
 					"ts_ls",
 				},
+				automatic_enable = true,
 			})
 		end,
 	},
-	{ "williamboman/mason-lspconfig.nvim" },
 	{
 		"neovim/nvim-lspconfig",
 		dependencies = {
@@ -48,10 +55,10 @@ return {
 			require("lspconfig").gopls.setup({
 				capabilities = capabilities,
 			})
-			require("lspconfig").eslint.setup({
+			require("lspconfig").rust_analyzer.setup({
 				capabilities = capabilities,
 			})
-			require("lspconfig").rust_analyzer.setup({
+			require("lspconfig").astro.setup({
 				capabilities = capabilities,
 			})
 		end,

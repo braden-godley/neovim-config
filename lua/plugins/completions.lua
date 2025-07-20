@@ -17,7 +17,7 @@ return {
 			},
 			completion = {
 				documentation = {
-					auto_show = false,
+					auto_show = true,
 				},
 			},
 			sources = {
