@@ -14,3 +14,9 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.opt.updatetime = 50
 vim.opt.clipboard = "unnamedplus"
+
+vim.diagnostic.config({
+    virtual_lines = {
+        current_line = true,
+    }
+})
