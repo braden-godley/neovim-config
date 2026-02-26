@@ -50,6 +50,9 @@ return {
 			})
 			require("lspconfig").eslint.setup({
 				capabilities = capabilities,
+				settings = {
+					run = "onSave",
+				},
 			})
 			require("lspconfig").rust_analyzer.setup({
 				capabilities = capabilities,
