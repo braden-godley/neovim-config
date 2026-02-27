@@ -16,7 +16,9 @@ vim.opt.updatetime = 50
 vim.opt.clipboard = "unnamedplus"
 
 vim.diagnostic.config({
-    virtual_lines = {
-        current_line = true,
-    }
+    virtual_lines = false,
+    virtual_text = {
+        spacing = 4,
+        prefix = "●",
+    },
 })

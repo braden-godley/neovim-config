@@ -41,6 +41,9 @@ local function setupKeybinds()
 	vim.keymap.set("n", "ga", ":lua vim.lsp.buf.code_action()<CR>", { silent = true })
 	vim.keymap.set("n", "gR", ":lua vim.lsp.buf.rename()<CR>", { silent = true })
 
+	-- diagnostics
+	vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { silent = true })
+
 	-- formatting
 	vim.keymap.set("n", "<leader>fm", ':lua require("conform").format()<CR>', { silent = true })
 
